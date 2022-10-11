@@ -89,7 +89,7 @@ public class Exam {
         } else {
         System.out.print(thirdNumber + " is the largest number.");
         }
-        
+
         
 
 
@@ -161,12 +161,16 @@ public class Exam {
         String specializationIT = scan.next();
         switch (specializationIT){
             case "MWA":
-            System.out.print("you are taking BSIT-MWA ");
+            System.out.print("valid");
             break;
 
             case "MAA":
-            System.out.println("You are taking BSIT-MAA");
+            System.out.println("valid");
             break;
+
+            default:
+            System.out.println("invalid");
+        
         }
         break;
 
@@ -176,12 +180,15 @@ public class Exam {
         String specialization2 = scan.next();
         switch (specialization2){
             case "ML":
-            System.out.println("You are taking BSCS-ML");
+            System.out.println("valid");
             break;
 
             case "DF":
-            System.out.println("You are taking BSCS-DF");
+            System.out.println("valid");
             break;
+
+            default:
+            System.out.println("invalid");
         
         }
         
@@ -251,14 +258,15 @@ public class Exam {
         //(10 pts)
         System.out.println("10. Validate student email address ");
         System.out.print("Enter your student email address: ");
-        String email = scan.next();
+        String studentEmail = scan.next();
         
-        if (email.contains("ricamarald")) {
+        if (studentEmail.contains("ricamarald") && studentEmail.contains("@student.national-u.edu.ph")) {
             System.out.println("valid");
     
             } else {
             System.out.println("invalid");
             }
+        
         
         // ==============================================================================
         // Programming competition/Job interview level question (20 points)
